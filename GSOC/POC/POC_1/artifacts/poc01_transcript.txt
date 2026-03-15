@@ -1,0 +1,22 @@
+POC-01 Detached Signing MVP Transcript
+
+Source OSCAL JSON: /home/jay/compliance-trestle/GSOC/POC/POC_1/workspace/catalogs/sample-catalog/catalog.json
+Generated at: 2026-03-30T04:27:18.967805+00:00
+
+Step 1 - Sign original OSCAL JSON and verify:
+  signature: catalog.original.sig
+  result: PASS - Verification passed.
+
+Step 2 - Tamper one field and verify with original signature:
+  tampered file: catalog.tampered.json
+  result: FAIL - Digest mismatch: payload changed after signing (expected 8982310024b716932387272feec9c69ede1868c21a7b9d566fb63d12abd77cb3, got 488d3b8a269279945305b8acaaf772682923ada5ee659db4d97be6c2cb00dd8d)
+
+Step 3 - Re-sign tampered file and verify again:
+  signature: catalog.tampered.sig
+  result: PASS - Verification passed.
+
+Evidence files:
+  - catalog.original.json
+  - catalog.tampered.json
+  - catalog.original.sig
+  - catalog.tampered.sig
