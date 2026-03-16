@@ -1,0 +1,8 @@
+POC-03 Signature Envelope Design Comparison Transcript
+
+Selected baseline: Custom minimal detached envelope
+Decision confidence: clear MVP-first recommendation with explicit migration path.
+
+Output files:
+- poc03_decision_matrix.json
+- poc03_decision_matrix.md

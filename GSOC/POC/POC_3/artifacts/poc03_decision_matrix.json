@@ -1,0 +1,66 @@
+{
+  "criteria": [
+    {
+      "name": "Compatibility with current trestle code",
+      "weight": 4,
+      "why": "Lower change risk helps deliver a working MVP quickly."
+    },
+    {
+      "name": "Migration complexity",
+      "weight": 3,
+      "why": "We need an approach that can evolve without rewriting everything."
+    },
+    {
+      "name": "Interoperability",
+      "weight": 4,
+      "why": "Cross-tool verification and ecosystem alignment are long-term goals."
+    },
+    {
+      "name": "Metadata and provenance support",
+      "weight": 3,
+      "why": "Auditability and traceability matter for compliance workflows."
+    }
+  ],
+  "options": [
+    {
+      "name": "Custom minimal detached envelope",
+      "scores": {
+        "Compatibility with current trestle code": 5,
+        "Migration complexity": 5,
+        "Interoperability": 2,
+        "Metadata and provenance support": 3
+      },
+      "weighted_total": 52,
+      "notes": "Fastest to implement; maps directly to POC-01 detached .sig flow."
+    },
+    {
+      "name": "DSSE-style envelope",
+      "scores": {
+        "Compatibility with current trestle code": 3,
+        "Migration complexity": 2,
+        "Interoperability": 5,
+        "Metadata and provenance support": 4
+      },
+      "weighted_total": 50,
+      "notes": "Strong ecosystem fit for supply chain attestations and provenance."
+    },
+    {
+      "name": "JWS-style envelope",
+      "scores": {
+        "Compatibility with current trestle code": 2,
+        "Migration complexity": 2,
+        "Interoperability": 4,
+        "Metadata and provenance support": 4
+      },
+      "weighted_total": 42,
+      "notes": "Good standards story, but extra JOSE complexity for early MVP."
+    }
+  ],
+  "selected_baseline": "Custom minimal detached envelope",
+  "migration_path": [
+    "MVP: custom detached envelope with payload hash, algorithm, and signature bytes.",
+    "Near-term: add explicit provenance fields (tool version, signer id, timestamp, build id).",
+    "Phase 2: add DSSE-compatible schema adapter and dual-emit mode.",
+    "Phase 3: default to DSSE style while maintaining backward verification for MVP signatures."
+  ]
+}
