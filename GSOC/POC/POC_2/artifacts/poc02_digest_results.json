@@ -1,0 +1,29 @@
+{
+  "canonicalization_profile": "json.dumps(sort_keys=True,separators=(',',':'))",
+  "results": [
+    {
+      "case_id": "A_pretty",
+      "semantic_group": "A",
+      "raw_sha256": "276ebedf7f6db8afcae84b31a1996d400ec259462c37814d60f8a243dd8bf399",
+      "canonical_sha256": "251224835c4556a4dececa7289959bc4c66d9718af1f63f260e8ebd4f5ad18ee"
+    },
+    {
+      "case_id": "A_compact",
+      "semantic_group": "A",
+      "raw_sha256": "1cb5d3acfdcb3c1dd258695fa61aa5f47d7e481188c8a282d7a88ab9dfc6e651",
+      "canonical_sha256": "251224835c4556a4dececa7289959bc4c66d9718af1f63f260e8ebd4f5ad18ee"
+    },
+    {
+      "case_id": "A_sorted",
+      "semantic_group": "A",
+      "raw_sha256": "703f6bfa16c112e5c718803cd7081faadcb8d2774bd5712bcfe9523d70af37e3",
+      "canonical_sha256": "251224835c4556a4dececa7289959bc4c66d9718af1f63f260e8ebd4f5ad18ee"
+    },
+    {
+      "case_id": "B_changed_semantic_value",
+      "semantic_group": "B",
+      "raw_sha256": "5f65d50977388ccc9406cd454a41f5e3246be81931bf88a8f64cd3471826353b",
+      "canonical_sha256": "5827a4635eaea3516e9b9b9acaf097f47e1189a4852f83667def7aa116e003bc"
+    }
+  ]
+}

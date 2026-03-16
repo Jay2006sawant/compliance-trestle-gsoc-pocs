@@ -1,0 +1,9 @@
+POC-02 Canonicalization Determinism Transcript
+
+Input source: built-in sample JSON
+same semantic object -> same digest: PASS
+changed semantic value -> different digest: PASS
+
+Output files:
+- poc02_digest_results.json
+- poc02_digest_table.md
