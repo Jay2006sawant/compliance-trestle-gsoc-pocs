@@ -1,0 +1,10 @@
+POC-04 Crypto Algorithm Compatibility Transcript
+
+Input source: built-in sample JSON
+Both ECDSA P-256 and RSA-PSS produce valid signatures and verify successfully.
+Negative cases (wrong key, corrupted signature, invalid key/algorithm mismatch) fail predictably.
+
+Artifacts:
+- poc04_payload_digest.txt
+- poc04_benchmark_results.json
+- poc04_benchmark_table.md
