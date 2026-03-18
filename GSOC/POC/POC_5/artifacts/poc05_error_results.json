@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "C1",
+    "failure": "missing OSCAL file",
+    "message": "[MISSING_OSCAL_FILE] OSCAL file not found: /home/jay/compliance-trestle/GSOC/POC/POC_5/artifacts/cases/missing-oscal.json",
+    "remediation": "Check the OSCAL path and ensure the file exists."
+  },
+  {
+    "case_id": "C2",
+    "failure": "missing .sig file",
+    "message": "[MISSING_SIGNATURE_FILE] Signature file not found: /home/jay/compliance-trestle/GSOC/POC/POC_5/artifacts/cases/missing.sig",
+    "remediation": "Create the detached signature file or correct the .sig path."
+  },
+  {
+    "case_id": "C3",
+    "failure": "digest mismatch",
+    "message": "[DIGEST_MISMATCH] Digest mismatch (expected db48a1381b8f6a38c1c26333c9c091a915dc4a5f4e2fff652ad5d63d2a411ae9, got b9f61ce614099c47d55546c18d6a5debbc9467a40ecfddfa1c59ea10ecbd4302).",
+    "remediation": "The artifact changed after signing; re-sign the exact payload."
+  },
+  {
+    "case_id": "C4",
+    "failure": "invalid signature",
+    "message": "[INVALID_SIGNATURE] Signature verification failed for payload and key.",
+    "remediation": "Use the matching signer public key and regenerate signature if needed."
+  },
+  {
+    "case_id": "C5",
+    "failure": "unsupported algorithm",
+    "message": "[UNSUPPORTED_ALGORITHM] Unsupported algorithm 'rsa-pss-sha512'.",
+    "remediation": "Use a supported algorithm (for MVP: ecdsa-p256-sha256)."
+  },
+  {
+    "case_id": "C6",
+    "failure": "malformed signature envelope",
+    "message": "[MALFORMED_SIGNATURE_ENVELOPE] Envelope is not valid JSON: Expecting property name enclosed in double quotes: line 1 column 3 (char 2)",
+    "remediation": "Fix envelope schema/fields and recreate the signature file."
+  }
+]
