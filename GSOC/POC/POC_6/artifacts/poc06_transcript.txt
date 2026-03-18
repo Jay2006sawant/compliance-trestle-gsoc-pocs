@@ -1,0 +1,19 @@
+POC-06 Trestle Workflow Integration Check Transcript
+
+Objective:
+- Prove signing design fits trestle write/read architecture.
+
+Findings:
+- Two primary write paths exist and both need signing hooks:
+  1) WriteAction/WriteFileAction path
+  2) OscalBaseModel.oscal_write path
+- Read/validate path centers on OscalBaseModel.oscal_read and Validator.validate.
+- Remote cache get_oscal path is a known bypass candidate and requires explicit verification coverage.
+
+Success criteria:
+- no major path left unsigned by design: PARTIAL PASS
+  (major paths covered by hook plan; remote cache path mitigation identified)
+
+Artifacts:
+- poc06_hook_points.json
+- poc06_architecture_hook_map.md

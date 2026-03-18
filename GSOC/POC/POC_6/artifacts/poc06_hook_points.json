@@ -1,0 +1,70 @@
+{
+  "objective": "Prove signing design fits trestle write/read architecture.",
+  "write_paths": {
+    "write_file_action": {
+      "entry_points": [
+        "trestle/core/commands/create.py",
+        "trestle/core/commands/import_.py",
+        "trestle/core/commands/split.py",
+        "trestle/core/commands/merge.py",
+        "trestle/core/commands/assemble.py",
+        "trestle/core/commands/add.py",
+        "trestle/core/commands/remove.py",
+        "trestle/core/commands/replicate.py"
+      ],
+      "core_hook": "trestle/core/models/actions.py::WriteAction.execute"
+    },
+    "oscal_write": {
+      "entry_points": [
+        "trestle/tasks/xlsx_to_oscal_cd.py",
+        "trestle/tasks/xccdf_result_to_oscal_ar.py",
+        "trestle/tasks/osco_result_to_oscal_ar.py",
+        "trestle/core/commands/author/component.py",
+        "trestle/core/commands/author/catalog.py",
+        "trestle/core/commands/author/prof.py",
+        "trestle/core/commands/href.py"
+      ],
+      "core_hook": "trestle/core/base_model.py::OscalBaseModel.oscal_write"
+    }
+  },
+  "read_and_validate_paths": {
+    "read": "trestle/core/base_model.py::OscalBaseModel.oscal_read",
+    "validate": [
+      "trestle/core/commands/validate.py::ValidateCmd._run",
+      "trestle/core/validator.py::Validator.validate"
+    ],
+    "distributed_load": "trestle/common/model_utils.py::ModelUtils.load_distributed"
+  },
+  "recommended_mvp_hooks": [
+    {
+      "hook": "Sign on write",
+      "location": "WriteAction.execute",
+      "reason": "Covers major CLI write flows that use WriteFileAction."
+    },
+    {
+      "hook": "Sign on write",
+      "location": "OscalBaseModel.oscal_write",
+      "reason": "Covers tasks and author flows that bypass WriteFileAction."
+    },
+    {
+      "hook": "Verify on read",
+      "location": "OscalBaseModel.oscal_read",
+      "reason": "Central read path used by distributed loader and many validators."
+    },
+    {
+      "hook": "Verify on validate",
+      "location": "validator_factory addition (SignatureValidator)",
+      "reason": "Supports policy modes and optional strict enforcement."
+    }
+  ],
+  "known_gap_paths": [
+    {
+      "location": "trestle/core/remote/cache.py::FetcherBase.get_oscal",
+      "risk": "Uses raw dict loading + parser.parse_dict and can bypass oscal_read verification hook.",
+      "mitigation": "Add verification in fetch/cache path or route through oscal_read equivalent."
+    }
+  ],
+  "success_criteria_check": {
+    "no_major_path_left_unsigned_by_design": "PARTIAL PASS - major write/read paths are covered by proposed hooks; remote fetch path requires explicit hook to close bypass."
+  }
+}
