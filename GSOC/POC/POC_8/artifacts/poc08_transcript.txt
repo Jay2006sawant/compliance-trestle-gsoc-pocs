@@ -1,0 +1,11 @@
+POC-08 Import/Assemble Signing Decision Transcript
+
+Recommendation:
+- automatic signing post-validation
+
+Reason:
+- low-risk, defensible integration point with strong trust consistency
+
+Artifacts:
+- poc08_decision.json
+- poc08_sequence_and_recommendation.md

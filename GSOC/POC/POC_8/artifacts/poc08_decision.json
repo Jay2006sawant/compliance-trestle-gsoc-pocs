@@ -1,0 +1,40 @@
+{
+  "options": [
+    {
+      "name": "explicit_manual_signing_only",
+      "pros": [
+        "Simple mental model",
+        "No implicit side effects"
+      ],
+      "cons": [
+        "Easy to forget signing",
+        "Inconsistent artifact trust"
+      ],
+      "risk": "medium"
+    },
+    {
+      "name": "automatic_signing_post_validation",
+      "pros": [
+        "Consistent trust baseline",
+        "Low user friction once configured"
+      ],
+      "cons": [
+        "Needs policy and key management guardrails"
+      ],
+      "risk": "low"
+    },
+    {
+      "name": "signing_during_assemble_publish_stage",
+      "pros": [
+        "Natural release boundary",
+        "Good for CI/CD integration"
+      ],
+      "cons": [
+        "Intermediate artifacts may remain unsigned"
+      ],
+      "risk": "medium"
+    }
+  ],
+  "recommended_option": "automatic_signing_post_validation",
+  "tradeoff_note": "Best balance of low operational risk and reliable provenance coverage; manual mode remains available for exceptional workflows."
+}
