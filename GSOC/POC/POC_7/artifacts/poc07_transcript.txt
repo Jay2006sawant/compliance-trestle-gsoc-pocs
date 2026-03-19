@@ -1,0 +1,11 @@
+POC-07 Policy Mode Simulation Transcript
+
+Input source: built-in sample JSON
+Policy behavior is consistent and predictable:
+- off: always allow
+- warn: allow + warning on unsigned/tampered
+- enforce: block unsigned/tampered, allow valid signed
+
+Artifacts:
+- poc07_policy_behavior.json
+- poc07_policy_behavior.md

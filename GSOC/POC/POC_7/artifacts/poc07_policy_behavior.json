@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "off",
+    "condition": "signed_valid",
+    "behavior": "ALLOW",
+    "reason": "Signature checks disabled by policy."
+  },
+  {
+    "mode": "off",
+    "condition": "unsigned",
+    "behavior": "ALLOW",
+    "reason": "Signature checks disabled by policy."
+  },
+  {
+    "mode": "off",
+    "condition": "signed_tampered",
+    "behavior": "ALLOW",
+    "reason": "Signature checks disabled by policy."
+  },
+  {
+    "mode": "warn",
+    "condition": "signed_valid",
+    "behavior": "ALLOW",
+    "reason": "Valid signature."
+  },
+  {
+    "mode": "warn",
+    "condition": "unsigned",
+    "behavior": "ALLOW_WITH_WARNING",
+    "reason": "UNSIGNED: No detached signature found."
+  },
+  {
+    "mode": "warn",
+    "condition": "signed_tampered",
+    "behavior": "ALLOW_WITH_WARNING",
+    "reason": "DIGEST_MISMATCH: Payload digest differs from signature envelope."
+  },
+  {
+    "mode": "enforce",
+    "condition": "signed_valid",
+    "behavior": "ALLOW",
+    "reason": "Valid signature."
+  },
+  {
+    "mode": "enforce",
+    "condition": "unsigned",
+    "behavior": "BLOCK",
+    "reason": "UNSIGNED: No detached signature found."
+  },
+  {
+    "mode": "enforce",
+    "condition": "signed_tampered",
+    "behavior": "BLOCK",
+    "reason": "DIGEST_MISMATCH: Payload digest differs from signature envelope."
+  }
+]
