@@ -1,0 +1,9 @@
+POC-09 Provenance Metadata Transcript
+
+Result:
+- Metadata materially improves auditability and root-cause tracing.
+
+Artifacts:
+- artifact_a.envelope.json
+- artifact_b.envelope.json
+- poc09_audit_walkthrough.md

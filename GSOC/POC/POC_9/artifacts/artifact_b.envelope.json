@@ -1,0 +1,14 @@
+{
+  "algorithm": "ecdsa-p256-sha256",
+  "payload_sha256": "fbfaf581990148435a5957f5acc1cd59ace74c3cae1f27367f61dbac016856b7",
+  "signature_b64": "MEUCIAK8DGvrsjkko1YXgdlP94z2I9vNXejeTkjh/PVUFoV8AiEAoNctKpRuJ2ykMinHm8T5lLAOVlO2bcfBGREC3vVKD/Q=",
+  "metadata": {
+    "tool_name": "trestle-poc",
+    "tool_version": "0.1.0",
+    "model_type": "catalog",
+    "signer_identity": "bob@example.com",
+    "timestamp_utc": "2026-03-30T04:27:19.684820+00:00",
+    "git_commit": "0eedd5d4",
+    "build_id": "build-20260319-042"
+  }
+}
