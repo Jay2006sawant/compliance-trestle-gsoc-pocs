@@ -1,0 +1,32 @@
+[
+  {
+    "threat": "Tampering after signing",
+    "impact": "Compromised artifact integrity and trust",
+    "mitigation": "Digest+signature verification on read/validate; enforce mode in sensitive workflows",
+    "non_goal": "Preventing all unauthorized file modifications on disk"
+  },
+  {
+    "threat": "Fake signer key substitution",
+    "impact": "Attacker can appear as trusted signer",
+    "mitigation": "Trusted key registry/fingerprint pinning and key rotation policy",
+    "non_goal": "Global PKI trust bootstrapping in MVP"
+  },
+  {
+    "threat": "Key leakage",
+    "impact": "Unauthorized signatures accepted as legitimate",
+    "mitigation": "Key storage hygiene, rotation, revocation list, HSM/KMS in future phase",
+    "non_goal": "Full enterprise key management rollout in MVP"
+  },
+  {
+    "threat": "Replay of old artifact",
+    "impact": "Outdated vulnerable content accepted",
+    "mitigation": "Version/timestamp checks, policy for freshness windows, provenance metadata review",
+    "non_goal": "Perfect prevention of every offline replay scenario"
+  },
+  {
+    "threat": "Malformed envelope parsing abuse",
+    "impact": "Parser confusion or denial-of-service pathways",
+    "mitigation": "Strict schema validation, bounded parsing, explicit error taxonomy",
+    "non_goal": "Mitigating unrelated parser bugs outside signature envelope scope"
+  }
+]

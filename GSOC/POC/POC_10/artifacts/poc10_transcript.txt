@@ -1,0 +1,7 @@
+POC-10 Threat Model Transcript
+
+Key risks are identified with concrete mitigations and explicit non-goals.
+
+Artifacts:
+- poc10_threat_model.json
+- poc10_threat_model.md
