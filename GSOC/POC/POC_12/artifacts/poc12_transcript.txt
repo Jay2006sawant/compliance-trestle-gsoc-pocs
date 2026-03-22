@@ -1,0 +1,9 @@
+POC-12 Documentation Usability Transcript
+
+Outcome:
+- quick-start is reproducible from a clean environment
+- friction points were identified and resolved in documentation
+
+Artifacts:
+- poc12_quickstart_tutorial.md
+- poc12_friction_points.md
