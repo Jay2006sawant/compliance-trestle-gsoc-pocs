@@ -1,0 +1,19 @@
+GSOC PoC verification run
+Time (UTC): 2026-03-30T04:27:18.893560+00:00
+Python: /home/jay/compliance-trestle/venv/bin/python
+Repo: /home/jay/compliance-trestle
+
+OK    POC_1/run_poc01_demo.py
+OK    POC_2/run_poc02_canonicalization.py
+OK    POC_3/evaluate_envelope_options.py
+OK    POC_4/run_poc04_crypto_compat.py
+OK    POC_5/run_poc05_error_taxonomy.py
+OK    POC_6/generate_poc06_artifacts.py
+OK    POC_7/run_poc07_policy_modes.py
+OK    POC_8/generate_poc08_signing_decision.py
+OK    POC_9/run_poc09_provenance_demo.py
+OK    POC_10/generate_poc10_threat_model.py
+OK    POC_11/generate_poc11_test_strategy.py
+OK    POC_12/generate_poc12_docs_usability.py
+
+Total: 12 scripts, 0 failed.
