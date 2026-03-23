@@ -5,12 +5,12 @@ Evidence track for **OSCAL document signing** work against
 ([#2037](https://github.com/oscal-compass/compliance-trestle/issues/2037),
 [#2013](https://github.com/oscal-compass/compliance-trestle/issues/2013)).
 
-`GSOC/POC/` holds runnable scripts and generated artifacts. Layout matches the upstream tree under `GSOC/`.
+`POC/` holds runnable scripts and generated artifacts.
 
 Run all PoCs from this repository root:
 
 ```bash
-python3 GSOC/POC/run_all_pocs.py
+python3 POC/run_all_pocs.py
 ```
 
 Requires Python 3.10+ and `pip install cryptography` (or a venv).
