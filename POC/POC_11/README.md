@@ -2,6 +2,11 @@
 
 This PoC demonstrates a test-first quality plan before core implementation.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc11_test_plan_checklist.md` and `artifacts/test_signing_strategy_skeleton.py`
+
 ## Objective
 
 Define and prototype coverage for:

@@ -1,7 +1,7 @@
 POC-01 Detached Signing MVP Transcript
 
-Source OSCAL JSON: /home/jay/compliance-trestle/POC/POC_1/workspace/catalogs/sample-catalog/catalog.json
-Generated at: 2026-03-30T04:27:18.967805+00:00
+Source OSCAL JSON: /home/jay/compliance-trestle/gsoc-pocs-repo/POC/POC_1/workspace/catalogs/sample-catalog/catalog.json
+Generated at: 2026-04-01T05:36:13.654838+00:00
 
 Step 1 - Sign original OSCAL JSON and verify:
   signature: catalog.original.sig

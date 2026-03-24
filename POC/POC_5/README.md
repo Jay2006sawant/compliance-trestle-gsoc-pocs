@@ -2,6 +2,11 @@
 
 This PoC verifies that signature verification failures are precise and actionable.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc05_error_matrix.md`, `artifacts/poc05_error_results.json`, and the generated failure cases
+
 ## Objective
 
 Trigger each expected failure and capture:

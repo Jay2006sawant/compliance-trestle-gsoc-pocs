@@ -2,6 +2,11 @@
 
 This PoC demonstrates detached signing and verification for OSCAL JSON (see `INDEX.md` POC-01).
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc01_transcript.txt` plus generated `.json` / `.sig` pairs
+
 ## Objective
 
 Prove we can:

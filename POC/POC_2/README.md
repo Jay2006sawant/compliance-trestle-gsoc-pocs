@@ -2,6 +2,11 @@
 
 This PoC demonstrates deterministic digest generation for logically identical JSON representations.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc02_digest_table.md` and `artifacts/poc02_digest_results.json`
+
 ## Objective
 
 Show:

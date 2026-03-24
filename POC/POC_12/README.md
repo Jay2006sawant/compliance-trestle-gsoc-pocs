@@ -2,6 +2,11 @@
 
 This PoC checks whether a non-expert can complete signing flow using docs only.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc12_quickstart_tutorial.md`, `artifacts/poc12_friction_points.md`, and `artifacts/poc12_transcript.txt`
+
 ## Objective
 
 - provide a short quick-start tutorial

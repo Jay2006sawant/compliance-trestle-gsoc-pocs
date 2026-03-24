@@ -2,6 +2,11 @@
 
 This PoC compares where signing should occur in the artifact lifecycle.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc08_sequence_and_recommendation.md` and `artifacts/poc08_decision.json`
+
 ## Objective
 
 Evaluate:

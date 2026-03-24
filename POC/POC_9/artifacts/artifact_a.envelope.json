@@ -1,13 +1,13 @@
 {
   "algorithm": "ecdsa-p256-sha256",
   "payload_sha256": "f2557e4363d89160d70003b190b712637b8f5ebdcf6faaab0c5bfdc639d6ddaf",
-  "signature_b64": "MEYCIQD+PHhtV3dJgKEvXBXA+1sksNaBdIXnmOnnL81d7HQoRgIhAI0aj2WAzs3rHJEUma0Pil+RZwqiAb9uJ57gqtEYCR52",
+  "signature_b64": "MEUCIQDdPBEvK/JUpZXX13Eh9b3ab+i7As6K9Ub60+yZeoP+gwIgczzv2IOwgJY2l2K2xnmfirGbJiXYuNNGzzUFrSWG7WY=",
   "metadata": {
     "tool_name": "trestle-poc",
     "tool_version": "0.1.0",
     "model_type": "catalog",
     "signer_identity": "alice@example.com",
-    "timestamp_utc": "2026-03-30T04:27:19.683022+00:00",
+    "timestamp_utc": "2026-04-01T05:36:14.412235+00:00",
     "git_commit": "0eedd5d4",
     "build_id": "build-20260319-001"
   }

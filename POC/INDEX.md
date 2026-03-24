@@ -2,6 +2,12 @@
 
 This index gives a quick view of what each PoC does and where to find its outputs.
 
+## Verification summary
+
+- All 12 PoC scripts run successfully from the portfolio repository root.
+- The aggregate verification report is written to `POC/artifacts/poc_verification_report.txt`.
+- Smoke coverage for the key PoC paths is provided by `POC/test_poc_smoke.py`.
+
 ## Data provenance (important)
 
 - These PoCs use **OSCAL JSON and synthetic test artifacts**, not legal contracts or legal advice content.

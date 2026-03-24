@@ -2,13 +2,13 @@
   {
     "case_id": "C1",
     "failure": "missing OSCAL file",
-    "message": "[MISSING_OSCAL_FILE] OSCAL file not found: /home/jay/compliance-trestle/POC/POC_5/artifacts/cases/missing-oscal.json",
+    "message": "[MISSING_OSCAL_FILE] OSCAL file not found: /home/jay/compliance-trestle/gsoc-pocs-repo/POC/POC_5/artifacts/cases/missing-oscal.json",
     "remediation": "Check the OSCAL path and ensure the file exists."
   },
   {
     "case_id": "C2",
     "failure": "missing .sig file",
-    "message": "[MISSING_SIGNATURE_FILE] Signature file not found: /home/jay/compliance-trestle/POC/POC_5/artifacts/cases/missing.sig",
+    "message": "[MISSING_SIGNATURE_FILE] Signature file not found: /home/jay/compliance-trestle/gsoc-pocs-repo/POC/POC_5/artifacts/cases/missing.sig",
     "remediation": "Create the detached signature file or correct the .sig path."
   },
   {

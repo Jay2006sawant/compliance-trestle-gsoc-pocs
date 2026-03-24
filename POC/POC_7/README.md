@@ -2,6 +2,11 @@
 
 This PoC demonstrates rollout behavior for signature policy modes.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc07_policy_behavior.md` and `artifacts/poc07_policy_behavior.json`
+
 ## Objective
 
 Show predictable handling for:

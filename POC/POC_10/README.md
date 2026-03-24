@@ -2,6 +2,11 @@
 
 This PoC captures realistic signature-related threats and mitigations.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc10_threat_model.md` and `artifacts/poc10_threat_model.json`
+
 ## Objective
 
 Cover:

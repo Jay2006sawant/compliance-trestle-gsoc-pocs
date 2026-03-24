@@ -2,6 +2,11 @@
 
 This PoC maps where OSCAL signing and verification should hook into trestle write/read flows.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc06_architecture_hook_map.md` and `artifacts/poc06_hook_points.json`
+
 ## Objective
 
 Demonstrate that signing design fits current trestle architecture and identify any bypass paths.

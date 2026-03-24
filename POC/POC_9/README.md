@@ -2,6 +2,11 @@
 
 This PoC shows how signature metadata improves auditing and troubleshooting.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc09_audit_walkthrough.md` and the example envelope files
+
 ## Objective
 
 Demonstrate usefulness of metadata fields:

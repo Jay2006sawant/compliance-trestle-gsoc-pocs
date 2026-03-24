@@ -2,6 +2,11 @@
 
 This PoC validates detached signature behavior with both ECDSA P-256 and RSA-PSS.
 
+## Current status
+
+- Verified successfully from the repository root with `python3 POC/run_all_pocs.py`
+- Primary evidence: `artifacts/poc04_benchmark_table.md` and `artifacts/poc04_benchmark_results.json`
+
 ## Objective
 
 - Verify both algorithms sign and verify the same payload reliably

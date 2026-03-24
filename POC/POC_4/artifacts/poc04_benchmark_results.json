@@ -4,8 +4,8 @@
     {
       "algorithm": "ECDSA_P256_SHA256",
       "signature_size_bytes": 71,
-      "sign_ms": 4.3613199959509075,
-      "verify_ms": 0.11145899770781398,
+      "sign_ms": 4.200814990326762,
+      "verify_ms": 0.10723498417064548,
       "valid_verify": "PASS",
       "wrong_key_result": "FAIL_INVALID_SIGNATURE",
       "corrupted_sig_result": "FAIL_INVALID_SIGNATURE",
@@ -14,8 +14,8 @@
     {
       "algorithm": "RSA_PSS_SHA256",
       "signature_size_bytes": 384,
-      "sign_ms": 2.0687180222012103,
-      "verify_ms": 0.04561000969260931,
+      "sign_ms": 2.323164022527635,
+      "verify_ms": 0.0649539870209992,
       "valid_verify": "PASS",
       "wrong_key_result": "FAIL_INVALID_SIGNATURE",
       "corrupted_sig_result": "FAIL_INVALID_SIGNATURE",
