@@ -19,6 +19,9 @@ that I used to de-risk the final implementation plan.
   README, tracker, runner, smoke tests, and generated artifacts
 - `SIGNING_ENVELOPE_COMPARISON.md` — detailed trade-off analysis for choosing a
   minimal JSON sidecar over JWS and DSSE/Sigstore for the MVP
+- `CROSS_DOCUMENT_INTEGRITY_ADR.md` — deeper design note for manifest-based
+  cross-document integrity, including URI handling, verification flow, and
+  trade-off analysis beyond the proposal summary
 - `timeline.md` — placeholder schedule/design planning note for proposal
   support
 
@@ -66,7 +69,9 @@ If you want the fastest overview:
 
 1. Read `POC/INDEX.md`
 2. Read `SIGNING_ENVELOPE_COMPARISON.md`
-3. Open the individual `POC_x/README.md` files for the evidence relevant to a
+3. Read `CROSS_DOCUMENT_INTEGRITY_ADR.md` for the cross-document design
+   direction behind Milestone 6.3
+4. Open the individual `POC_x/README.md` files for the evidence relevant to a
    milestone
 
 If you want to reproduce the evidence locally:
